@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Nutricionista - Asistente Virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuente moderna Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Encabezado de la interfaz -->
+        <header class="app-header">
+            <div class="avatar-container">
+                <span class="avatar-icon">🥗</span>
+            </div>
+            <div class="header-info">
+                <h1>NutriBot 🥑</h1>
+                <p>Tu asistente virtual de nutrición y trámites</p>
+            </div>
+        </header>
+
+        <!-- ESTRUCTURA DEL BOCETO: zona de chat -->
+        <main class="zona-de-chat" id="zona-de-chat">
+            <!-- Mensaje de bienvenida inicial de la IA -->
+            <div class="mensaje bot">
+                <div class="burbuja">
+                    ¡Hola! 👋 Soy tu Nutricionista Virtual. ¿En qué puedo ayudarte hoy sobre planes, trámites o dudas de nutrición?
+                </div>
+            </div>
+        </main>
+
+        <!-- ESTRUCTURA DEL BOCETO: zona de escritura -->
+        <footer class="zona-de-escritura" id="zona-de-escritura">
+            <form id="chat-form" class="chat-form">
+                <textarea 
+                    id="user-input" 
+                    placeholder="Escribe tu consulta aquí..." 
+                    rows="2" 
+                    required></textarea>
+                <button type="submit" id="send-btn" class="send-btn" title="Enviar mensaje">
+                    <span>Enviar</span>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                    </svg>
+                </button>
+            </form>
+        </footer>
+    </div>
+
+    <!-- Carga de archivos de configuración y scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
